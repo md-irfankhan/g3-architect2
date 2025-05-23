@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .work-sans-700 {
@@ -197,6 +198,43 @@ main {
     color: rgb(255, 255, 255);
 
 }
+
+.facts{
+    margin-top: 150px;
+}
+.facts h4{
+    font-size: 2.8rem;
+}
+.facts p{
+    font-size: 1rem;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.fact-card{
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid rgb(255, 144, 14);
+    padding: 45px;
+    /* width: 195px;
+    height: 195px; */
+
+}
+.fact-card h4{
+    font-size: 2.8rem;
+    text-align: center;
+}
+.fact-card p{
+    font-size: 1.25rem;
+    text-align: center;
+}
+.fact-cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 124px;
+}
 @media screen and (max-width:576px) {
 
     nav,
@@ -235,6 +273,10 @@ main {
         margin-right: 5px;
         margin-top: 5px;
     }
+    .fact-cards{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
 
 }
 
@@ -262,6 +304,10 @@ main {
         margin-right: 5px;
         margin-top: 5px;
     }
+    .fact-cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+
 
 
 }
